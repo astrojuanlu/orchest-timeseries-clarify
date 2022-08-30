@@ -1,0 +1,13 @@
+channels:
+- conda-forge
+dependencies:
+- pandas
+- matplotlib
+- scikit-learn
+- statsmodels
+- ipympl
+- ipywidgets>=7.0,<8
+- pip
+- pip:
+  - pyclarify
+  - adtk
