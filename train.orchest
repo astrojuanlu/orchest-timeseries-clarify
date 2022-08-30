@@ -7,6 +7,27 @@
         "data_passing_memory_size": "1GB"
     },
     "steps": {
+        "8848bbb4-df42-4912-819e-aa3cec7b92b6": {
+            "environment": "de413fa4-dbc7-4d6a-9008-ca5faf512fe7",
+            "file_path": "train_ad_model.ipynb",
+            "incoming_connections": [
+                "fccae40e-31ed-4c56-b200-e653f857d5da"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    283.5,
+                    80
+                ]
+            },
+            "parameters": {},
+            "title": "Train Anomaly Detection model",
+            "uuid": "8848bbb4-df42-4912-819e-aa3cec7b92b6"
+        },
         "fccae40e-31ed-4c56-b200-e653f857d5da": {
             "environment": "de413fa4-dbc7-4d6a-9008-ca5faf512fe7",
             "file_path": "load_timeseries_data.ipynb",
@@ -19,7 +40,7 @@
                 "hidden": false,
                 "position": [
                     20,
-                    80
+                    80.00000000000001
                 ]
             },
             "parameters": {
