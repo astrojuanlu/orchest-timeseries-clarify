@@ -1,0 +1,35 @@
+{
+    "name": "Train",
+    "parameters": {},
+    "services": {},
+    "settings": {
+        "auto_eviction": false,
+        "data_passing_memory_size": "1GB"
+    },
+    "steps": {
+        "fccae40e-31ed-4c56-b200-e653f857d5da": {
+            "environment": "de413fa4-dbc7-4d6a-9008-ca5faf512fe7",
+            "file_path": "load_timeseries_data.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    20,
+                    80
+                ]
+            },
+            "parameters": {
+                "item_id": "cc3kdebfgirgtavrbjn0",
+                "ts_start": "2021-08-10T00:00:00Z"
+            },
+            "title": "Load timeseries data",
+            "uuid": "fccae40e-31ed-4c56-b200-e653f857d5da"
+        }
+    },
+    "uuid": "c87bb737-6ba5-4013-9ccf-ff6f17fa9bc0",
+    "version": "1.2.1"
+}
