@@ -45,9 +45,9 @@
             },
             "parameters": {
                 "item_id": "cc3kdebfgirgtavrbjn0",
-                "ts_start": "2021-08-10T00:00:00Z"
+                "ts_last_hours": null
             },
-            "title": "Load timeseries data",
+            "title": "Load all timeseries data",
             "uuid": "fccae40e-31ed-4c56-b200-e653f857d5da"
         }
     },
