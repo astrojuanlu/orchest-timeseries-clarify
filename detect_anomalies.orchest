@@ -1,0 +1,100 @@
+{
+    "name": "Detect Anomalies",
+    "parameters": {},
+    "services": {},
+    "settings": {
+        "auto_eviction": false,
+        "data_passing_memory_size": "1GB"
+    },
+    "steps": {
+        "261cf6ed-a7f2-4b7b-b76d-667faaf774dd": {
+            "environment": "de413fa4-dbc7-4d6a-9008-ca5faf512fe7",
+            "file_path": "detect_anomalies.ipynb",
+            "incoming_connections": [
+                "a0d5e7eb-3a7e-4aa8-ab3b-ba4664a2c58a"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    283.5,
+                    169.25000000000003
+                ]
+            },
+            "parameters": {},
+            "title": "Detect anomalies",
+            "uuid": "261cf6ed-a7f2-4b7b-b76d-667faaf774dd"
+        },
+        "64368584-09e9-49f0-a08f-bf6e649e80ca": {
+            "environment": "de413fa4-dbc7-4d6a-9008-ca5faf512fe7",
+            "file_path": "notify.ipynb",
+            "incoming_connections": [
+                "261cf6ed-a7f2-4b7b-b76d-667faaf774dd"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    547,
+                    80
+                ]
+            },
+            "parameters": {},
+            "title": "Send notification",
+            "uuid": "64368584-09e9-49f0-a08f-bf6e649e80ca"
+        },
+        "a0d5e7eb-3a7e-4aa8-ab3b-ba4664a2c58a": {
+            "environment": "de413fa4-dbc7-4d6a-9008-ca5faf512fe7",
+            "file_path": "load_timeseries_data.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    20,
+                    169.25000000000006
+                ]
+            },
+            "parameters": {
+                "item_id": "cc3kdebfgirgtavrbjn0",
+                "ts_last_hours": 48
+            },
+            "title": "Load last hours of time series data",
+            "uuid": "a0d5e7eb-3a7e-4aa8-ab3b-ba4664a2c58a"
+        },
+        "dbe6f415-0b00-4387-a033-daf072827227": {
+            "environment": "de413fa4-dbc7-4d6a-9008-ca5faf512fe7",
+            "file_path": "write_anomalies_clarify.ipynb",
+            "incoming_connections": [
+                "261cf6ed-a7f2-4b7b-b76d-667faaf774dd"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    547,
+                    258.5
+                ]
+            },
+            "parameters": {
+                "item_name": "traffic_anomalies"
+            },
+            "title": "Write anomalies to Clarify",
+            "uuid": "dbe6f415-0b00-4387-a033-daf072827227"
+        }
+    },
+    "uuid": "07a9d9e0-cdfd-4944-9c6d-26226a0b564d",
+    "version": "1.2.1"
+}
